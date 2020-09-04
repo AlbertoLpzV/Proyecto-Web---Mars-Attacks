@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* -------------- CUERPO --------------------*/
+body{
+  width: auto;
+  height: auto;
+  border: 60px;
+  margin: 70 auto;
+  padding: 50;
+  overflow: hidden;
+  float: none !important;
+  background-size: cover;
+
+}
+.back{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.thx{
+  position: fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom: 15px;
+}
+#space_video {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+#marco{
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  position: absolute;
+}
+#introVideo {
+  z-index: 5;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+#botonIntro{
+  z-index: 6;
+  position: fixed;
+  right: 30;
+  bottom: 50;
+  width: 10%;
+  height: 4.5%;
+  min-width: 10%;
+  min-height: 4.5%;
+  color: white;
+  background: black
+}
+
+/* --------------ABOUT US------------------*/
+
+#bodyautor{
+  width: auto;
+  height: auto;
+  border: 60px;
+  margin: 70 auto;
+  padding: 50;
+  overflow: hidden;
+  float: none !important;
+  background-size: cover;
+}
+#botonDesarrollo{
+  z-index: 6;
+  position: relative;
+  left: 0.3vw;
+  top: 0.2vh;
+  width: 120px;
+  height: 30px;
+  color: white;
+  background: black;
+}
+.td1{
+  position: fixed;
+  top: 38.5% ;
+  left: 8.2%;
+}
+.td2{
+  position: fixed;
+  top: 38.5% ;
+  left: 60%;
+}
+.td3{
+  position: fixed;
+  top: 70.5%;
+  left: 14%;
+}
+.td4{
+  position: fixed;
+  top: 70.5%;
+  left: 53%;
+}
+h17{
+    font-size: 17px;
+}
+#ship{
+  position: relative;
+  top:9px;
+  left: -10px;
+  margin-left: 30px;
+  width: 340px;
+  height: 300px;
+}
+#iddesarrollo{
+  font-size: 18px;
+}
+#bodydes{
+  width: auto;
+  height: auto;
+  border: 60px;
+  margin: 70 auto;
+  padding: 50;
+  overflow: scroll;
+  float: none !important;
+  background-size: cover;
+}
+#recursos{
+  font-size: 18px;
+  position: absolute;
+
+}
+#textoautores{
+ top: 0px;
+ font-size: 16px;
+}
+#alberto{
+  width: 140px; height: 140px;
+}
+#gabbo{
+  width: 140px; height: 140px;
+}
+#raul{
+  width: 140px; height: 140px;
+}
+#ines{
+  width: 140px; height: 140px;
+}
+/* --------------------  POPUP GAME OVER ------------------*/
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.game_over{
+  position: absolute;
+  width:550px;
+  top: 10vw;
+  left: 64vh;
+}
+h4{
+  position: absolute;
+  top: 63vh;
+  left: 50vw;
+  font-size: 34px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+h5{
+  position: absolute;
+  top: 55vh;
+  left: 50vw;
+  font-size: 34px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+h2{
+  position: absolute;
+  top: 72vh;
+  left: 49.8vw;
+  font-size: 34px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#btnsubmit{
+  z-index: 6;
+  position: fixed;
+  left: 45vw;
+  top: 81vh;
+  width: 10%;
+  height: 5%;
+  min-width: 10%;
+  min-height: 4.5%;
+  color: white;
+  background: black
+}
+
+/* --------------------  POPUP GANAR ------------------*/
+#overlaywin {
+  position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+#win{
+  position: absolute;
+  width:700px;
+  top: 9vw;
+  left: 55vh;
+}
+h7{
+  position: absolute;
+  top: 63vh;
+  left: 50vw;
+  font-size: 43px;
+  color: white;
+  transform: translate(-50%,-50%);
+}
+h6{
+  position: absolute;
+  top: 56vh;
+  left: 50vw;
+  font-size: 43px;
+  color: white;
+  transform: translate(-50%,-50%);
+}
+
+#botonNextLevel{
+  z-index: 6;
+  position: fixed;
+  left: 45vw;
+  top: 76vh;
+  width: 10%;
+  height: 5%;
+  min-width: 10%;
+  min-height: 4.5%;
+  color: white;
+  background: black
+}
+/* ----------------------------------------------*/
+
+/* --------------------  CRONO ------------------*/
+
+.marcador{
+  display: block;
+  position: absolute;
+  top: 15vh;
+  left: 6vw;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Aclonica', sans-serif;
+}
+.nivel{
+  display: block;
+  position: absolute;
+  top: 19vh;
+  left: 76vw;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Righteous', cursive;
+}
+/* -------------------------------------------*/
+
+/*--------------- NAVEGADOR ------------------*/
+nav{
+  width: 100%;
+  position: fixed;
+  top:0px;
+  left: 0.7vw;
+  z-index: 3;
+  text-align:center;
+}
+
+h1{
+  font-family: 'Aclonica', sans-serif;
+  font-size: 46px;
+  color: white;
+}
+
+nav a{
+  font-family:  'Aclonica', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color: #f4f4f4;
+  top: 0px;
+  margin:0 19px;
+  font-size:20px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+nav a:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #f4f4f4;
+  top:50%;
+  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before{
+  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
+  }
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
+  }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
+    right: 0;
+  }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}){
+    animation:show .2s #{$i*0.1+1}s ease 1 both;
+  }
+}
+/* ------------------ INSTRUCCIONES -----------------------*/
+#bodyinst{
+  width: auto;
+  height: auto;
+  border: 60px;
+  margin: 70 auto;
+  padding: 50;
+  overflow: hidden;
+  float: none !important;
+  background-size: cover;
+}
+.instru{
+  border-radius: 3px;
+  padding: 3px;
+  font-family: 'Righteous', cursive;
+  color: white;
+  top: 100%;
+}
+.tdp1{
+  text-align: center;
+  position: relative;
+  left:-1%;
+  margin-top: -25px;
+
+}
+.tdp2{
+  text-align: center;
+  left:2%;
+  position: relative;
+  margin-top: -25px;
+}
+.tdp3{
+  text-align: center;
+  position: relative;
+  left:2%;
+  margin-top: -25px;
+}
+/* ------------------ CONTACT US -----------------------*/
+
+
+body {font-family: 'Righteous', cursive;}
+* {box-sizing: border-box;}
+
+#instrgp{
+  color: white;
+  font-size:18px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Righteous', cursive;
+}
+input[type=submit] {
+  background-color: #252850;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Righteous', cursive;
+}
+input[type=submit]:hover {
+  background-color: #252850;
+}
+#contacto{
+  top:35%;
+  left: 14%;
+  width: auto;
+  height: 400px;
+  display:block;
+  position: absolute;
+}
+.container {
+  border-radius: 3px;
+  padding: 20px;
+  font-family: 'Righteous', cursive;
+  color: white;
+  top: 100%;
+}
+h8{
+  font-family: 'Righteous', cursive;
+  padding: 30px;
+  color: white;
+  top: 0vh;
+  left: 34.5vw;
+  margin:0 19px;
+  font-size:35px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+h9{
+  font-family: 'Righteous', cursive;
+  padding: 1px;
+  color: white;
+  top: -3vh;
+  left: 27%;
+  margin:0 23px;
+  font-size:25px;
+  letter-spacing:1px;
+  position:relative;
+  display:block;
+}
+h10{
+  font-family: 'Righteous', cursive;
+  color: white;
+  top: 0vh;
+  left: 41vw;
+  font-size:35px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+  margin-bottom: -20px;
+}
+h11{
+  font-family: 'Righteous', cursive;
+  padding: 30px;
+  color: white;
+  top: 0vh;
+  left: 35vw;
+  margin:0 19px;
+  font-size:35px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+h14{
+  font-family: 'Righteous', cursive;
+  color: white;
+  top: 0vh;
+  left: 39vw;
+  font-size:35px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+#info{
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: white;
+  font-size:11px;
+  letter-spacing:1px;
+  padding: 2px;
+
+}
+
+.enviar{
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Righteous', cursive;
+}
+h19{
+  font-family: 'Righteous', cursive;
+  color: white;
+  top: 0vh;
+  left: 34.5vw;
+  font-size:35px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+#tablarecursos{
+  font-family: 'Righteous', cursive;
+  color: white;
+  font-size:20px;
+  align-content: center;
+  display: block;
+  width: 1300px;
+  height: 898px;
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+#tablarecursos, #ref, #linkk {
+  border: 2px solid white;
+}
+#ref, #linkk {
+  padding: 15px;
+}
+/* ------------------ CANVAS -----------------*/
+#mycanvas {
+    background-image: url("../recursos/gif/img1.gif");
+    background-repeat:no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    width: 1400px;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+.press_start{
+  display: block;
+  position: fixed;
+  top: 40vh;
+  left: 30vw;
+}
+/* -------------------------------------------*/
