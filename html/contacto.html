@@ -1,0 +1,53 @@
+
+<html>
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+
+  <body id="bodyau">
+
+    <div>
+      <nav>
+        <a href="../html/MarsAttacks.html">JUGAR</a>
+        <a href="../html/instrucciones.html">INSTRUCCIONES</a>
+        <a href="../html/MarsAttacks.html"><h1>MARS ATTACKS</h1></a>
+        <a href="../html/aboutus.html">AUTORES</a>
+        <a href="../html/contacto.html">CONTÁCTANOS</a>
+      </nav>
+    </div>
+    <h11 class= "contact" align=center> CONTÁCTANOS </h11>
+    <video autoplay muted loop id="space_video" type="video/mp4">
+      <source src="../recursos/video/space_video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="container">
+
+    <form id="contact">
+
+      <label for="fname">Nombre</label>
+      <input type="text" id="fname" name="firstname" placeholder="Tu nombre.." >
+
+      <label for="lname">Apellidos</label>
+      <input type="text" id="lname" name="lastname" placeholder="Tus apellidos..">
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu comentario.." style="height:150px"></textarea>
+
+      <p> Será redirigido a su correo electrónico para finalizar el envío de su mensaje. </p>
+
+    </form>
+
+          <button type="button" value="Submit" class="enviar" onclick="location.reload();sendMail();">Enviar </button>
+
+    </div>
+    <script src="../scripts/contacto.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<html>
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+
+  </head>
+
+  <body id="bodydes" onscroll="funcionScroll()">
+    <div id="navdesarrollo">
+      <nav>
+        <a href="../html/MarsAttacks.html">JUGAR</a>
+        <a href="../html/instrucciones.html">INSTRUCCIONES</a>
+        <a href="../html/MarsAttacks.html"><h1>MARS ATTACKS</h1></a>
+        <a href="../html/aboutus.html">AUTORES</a>
+        <a href="../html/contacto.html">CONTÁCTANOS</a>
+      </nav>
+    </div>
+    <h14 class= "contact" align=center> DESARROLLO  </h14>
+    <video autoplay muted loop id="space_video" type="video/mp4">
+      <source src="../recursos/video/space_video.mp4" type="video/mp4">
+      </video>
+
+      <div class="container">
+        <form>
+          <p align="justify" id="iddesarrollo">
+            &nbsp;&nbsp;&nbsp;&nbsp;Antes de comenzar con el desarrollo del juego decidimos ponernos de acuerdo con la temática. Una vez consensuado sin ningún problema,
+            decidimos empezar con la realización de un juego más simple que sentase las bases, y así comenzar con la idea que teníamos en mente. Para ello, probamos
+            con el clásico juego que comprende una raqueta y una bola - la bola ha de destruir diversos ladrillos - para de esta manera poder entender el funcionamiento de los rebotes en las paredes.
+            Una vez teníamos la perfecta ejecución del juego inicial procedimos a la adaptación del que habíamos pensado y planeado. <br> <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;De esta forma, nos encontramos con el primer problema: la sustitución de ladrillos por naves móviles. Al querer sustituir la figura geométrica por
+            una imagen específica, pasamos a través de diversas trabas que conseguimos solventar con la creación de una función que dibuja los recursos que necesitamos. <br><img id=ship src="../recursos/gif/infiniteship.gif" align="right">  <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Una vez conseguida pasar esa pequeña dificultad, nos encontramos con otra, y es que los disparos no eran otras imágenes, sino una linea que se extendía desde que pulsas espacio
+            hasta que sueltas. Para esto decidimos introducir una variable booleana que respondiese a un evento de pulsación de tecla, consiguiendo así que el tamaño de la bala fuese siempre el mismo,
+            independientemente del tiempo de pulsación.<br> <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Cuando ya habíamos conseguido que el juego a nivel 0 funcionase,decidimos implementar niveles. Para ello necesitabamos reiniciar todas las variables,
+            para que al cambiar de nivel tuviesen su valor correspondoente al nivel, y reiniciase las condiciones de final de juego. Aquí nos surgió un nuevo problema
+            y es que no conseguíamos reinicar el juego ya que su estructura hacía que fuese más complejo el reseteo de las variables. Conseguimos modificarlo, limpiar la pantalla
+            y darle el valor deseado a las variables cada vez que se pasaba de nivel. <br> <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Otra idea inicial era hacer un ranking que te indicase la posición en la que estabas dependiendo del score obtenido.
+            Finalmente, Gabriel, el encargado de su realizaión, por motivos personales, no pudo hacerlo y tuvimos que cambiarlo por un marcador que indica tu última puntuación.
+          <br><br>  &nbsp;&nbsp;&nbsp;&nbsp; Respecto a los tiempos de planificación, estos fueron cumplidos al principio sin ningún problema, ya que además lo primero evidentemente era crear la estructura básica del juego, y eso no nos causó problemas. Después
+            cuando ya empezamos con funciones más complejas, debido a todo lo sucedido con el Covid-19, el cambio del plazo de entrega y el tema del compañero que apenas ha hecho nada por motivos personales, los plazos establecidos incialmente
+            para el juego se vieron trastocados. <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Finalmente, los plazos acordados tras conocer estos cambios se han cumplido, ya que reservamos días para pedir tutorías para los problemas que suponiamos que podían surgir.<br>
+            <br>  &nbsp;&nbsp;&nbsp;&nbsp; Las funciones de cada participante del grupo han sido las siguientes:<br>&nbsp;&nbsp;&nbsp;- Alberto López, Raúl Linio e Inés García nos hemos encargado de la implementación de las funciones del juego en general.
+            <br><br> Más concretamente:<br>
+            &nbsp;&nbsp;- Alberto se ha encargado de la optimización y diseño de las funciones, dibujado de imagenes en canvas, estética del juego, loop principal, reinicio y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;procesamiento multimedia, de los HTML de intrucciones y desarrollo.<br>
+            &nbsp;&nbsp;&nbsp;- Inés se ha encargado de implementar los niveles, y otras funciones como las colisiones, final de juego y enviar correo electrónico, y de los HTML de autores, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;intrucciones y contacto.<br>
+            &nbsp;&nbsp;&nbsp;- Raúl se ha encargado de los marcadores, de funciones como las responsables de los rebotes y el final del juego, de los eventos de teclado, y de los HTML de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;intrucciones y desarrollo.
+            <br>&nbsp;&nbsp;&nbsp;-  Gabriel, por lo comentado anteriormente, solo ha hecho el navegador.<br>
+            <br>Por hacer una aproximación del trabajo individual hecho en el proyecto, definimos los siguientes porcentajes: <br>&nbsp;&nbsp;&nbsp;&nbsp;- Alberto 38% <br>&nbsp;&nbsp;&nbsp;&nbsp;- Inés 28% <br>&nbsp;&nbsp;&nbsp;&nbsp;- Raúl 28% <br>&nbsp;&nbsp;&nbsp;&nbsp;- Gabriel 6%.<br><br><br>
+          </p>
+        </form>
+      </div>
+
+    <h19 class= "contact" align=center> RECURSOS UTILIZADOS </h19>
+
+    <table id="tablarecursos">
+        <tbody>
+          <tr>
+            <th>REFERENCIA</th>
+            <th>LINK</th>
+          </tr>
+          <tr>
+            <td id="ref">W3Schools</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></li>
+                <li><a href="https://www.w3schools.com/js/js_timing.asp">https://www.w3schools.com/js/js_timing.asp</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_nav.asp">https://www.w3schools.com/tags/tag_nav.asp</a></li>
+                <li><a href="https://www.w3schools.com/js/js_window_location.asp">https://www.w3schools.com/js/js_window_location.asp</a></li>
+                <li><a href="https://www.w3schools.com/jsref/event_onscroll.asp">https://www.w3schools.com/jsref/event_onscroll.asp</a></li>
+                <li><a href="https://www.w3schools.com/php/func_mail_mail.asp">https://www.w3schools.com/php/func_mail_mail.asp</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="ref">Developer.mozilla</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Games/Workflows/Famoso_juego_2D_usando_JavaScript_puro">https://developer.mozilla.org/es/docs/Games/Workflows/Famoso_juego_2D_usando_JavaScript_puro</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="ref">Developerdrive</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/">https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="ref">Devcode</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://devcode.la/tutoriales/background-animado-de-copos-de-nieve/">https://devcode.la/tutoriales/background-animado-de-copos-de-nieve/</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="ref">Codepen</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://codepen.io/adelciotto/pen/BHuGL">https://codepen.io/adelciotto/pen/BHuGL</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="ref">Codeproject</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://www.codeproject.com/Articles/681130/Learn-JavaScript-Part-2-Space-Invaders">https://www.codeproject.com/Articles/681130/Learn-JavaScript-Part-2-Space-Invaders</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="ref">AulaGlobal</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://aulaglobal.uc3m.es/pluginfile.php/3449749/mod_resource/content/2/3.%20Javascript%20-%20Introduccion.pdf">https://aulaglobal.uc3m.es/pluginfile.php/3449749/mod_resource/content/2/3.%20Javascript%20-%20Introduccion.pdf</a></li>
+                <li><a href="https://aulaglobal.uc3m.es/pluginfile.php/3449751/mod_resource/content/2/4a.%20DOM.pdf">https://aulaglobal.uc3m.es/pluginfile.php/3449751/mod_resource/content/2/4a.%20DOM.pdf</a></li>
+                <li><a href="https://aulaglobal.uc3m.es/pluginfile.php/3449753/mod_resource/content/2/4b.%20Audio%20y%20video%20HTML5.pdf">https://aulaglobal.uc3m.es/pluginfile.php/3449753/mod_resource/content/2/4b.%20Audio%20y%20video%20HTML5.pdf</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="ref">YouTube</td>
+            <td id="linkk">
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=krhkNzg6FPo">https://www.youtube.com/watch?v=krhkNzg6FPo</a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <script src="../scripts/eventosTeclado.js" type="text/javascript"></script>
+    </body>
+
+</html>

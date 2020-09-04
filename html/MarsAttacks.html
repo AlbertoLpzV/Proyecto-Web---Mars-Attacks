@@ -1,0 +1,98 @@
+<html>
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+      <title>Mars Attacks</title>
+      <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+
+  </head>
+
+
+  <body onLoad="pantallaJugar();randomFondoJuego(fondoJuego);" >
+
+      <div>
+        <nav>
+        <a href="../html/MarsAttacks.html">JUGAR</a>
+        <a href="../html/instrucciones.html">INSTRUCCIONES</a>
+        <a href="../html/MarsAttacks.html"><h1>MARS ATTACKS</h1></a>
+        <a href="../html/aboutus.html">AUTORES</a>
+        <a href="../html/contacto.html">CONTÁCTANOS</a>
+      </nav>
+      </div>
+
+      <input id="botonIntro" type="button" value="Omitir introducción" onclick="pauseVideo();">
+
+      <div id="marco">
+      <video controls autoplay loop id="introVideo" type="video/mp4">
+        <source src="../recursos/video/intro.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+      </video></div>
+
+      <video autoplay muted loop id="space_video" type="video/mp4">
+        <source src="../recursos/video/space_video.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+      </video>
+
+      <audio loop id="music8bit" type="audio/mp3">
+        <source src="../recursos/sound/music.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="gameoversound" type="audio/mp3">
+        <source src="../recursos/sound/gameoversound.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="lasersound" type="audio/mp3">
+        <source src="../recursos/sound/lasersound.mp3" type="audio/mp3">
+      </audio>
+
+
+
+        <div id="overlay">
+          <div class="popup1" id='score'>  // popup que aparece cuando pierdes
+              <img class="game_over" id="game_over" src="../recursos/imagenes/game_over.png"/>
+              <h4> SCORE: <span id="score-pantalla1">0</span></h4>
+              <h5> LEVEL: <span id="nivel1">0</span></h5>
+              <h2> LAST SCORE: <span id="lastOne">0</span></h2>
+
+              <input type="button" id="btnsubmit" value="PLAY AGAIN" onmousedown="playAgain();"/>
+
+          </div>
+        </div>
+
+        <div id="overlaywin">
+          <div class="popup2" id='score'>  //popup que aparece cuando ganas
+              <img class="win" id="win" src="../recursos/gif/levelup.gif"/>
+              <h6> SCORE: <span id="score-pantalla2">0</span></h6>
+              <h7> LEVEL: <span id="nivel2"></span></h7>
+              <input id="botonNextLevel" type="button" value="NEXT LEVEL" onmousedown="playAgain();">
+          </div>
+        </div>
+
+
+
+      <p class="marcador" id="marcadorpadre">
+         <a class="marcador1" id="marcadorhijo">Score: <span id="marcador">0</span></a>
+      </p>
+
+      <div id="canvascanvas">
+
+        <canvas id="myCanvas"></canvas>
+
+        <img id="press_start"  class="press_start" src="../recursos/gif/press_start2.gif" onClick="init();">
+
+      </div>
+
+
+      <script src="../scripts/animacion.js" type="text/javascript"></script>
+      <script src="../scripts/objetos.js" type="text/javascript"></script>
+      <script src="../scripts/eventosTeclado.js" type="text/javascript"></script>
+      <script src="../scripts/finalJuego.js" type="text/javascript"></script>
+      <script src="../scripts/marcador.js" type="text/javascript"></script>
+      <script src="../scripts/funcJuego.js" type="text/javascript"></script>
+
+  </body>
+
+
+</html>
